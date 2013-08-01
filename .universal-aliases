@@ -1,0 +1,4 @@
+alias go='git checkout '
+alias gist="git st"
+alias gadd="git add"
+alias ll="ls -la"

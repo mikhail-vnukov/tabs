@@ -1,0 +1,36 @@
+[alias]
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+	lga = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+	who = shortlog -s --
+	cp = cherry-pick
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch
+	df = diff --word-diff
+	dc = diff --cached
+	r = reset
+	r1 = reset HEAD^
+	r2 = reset HEAD^^
+	rh = reset --hard
+	rh1 = reset HEAD^ --hard
+	rh2 = reset HEAD^^ --hard
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+	fetched=log ORIG_HEAD.. --stat --no-merges
+	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+	purr=git pull --rebase
+	st=status -sb
+[mergetool]
+	prompt = false
+[help]
+	autocorrect = 1
+[color]
+	ui = 1
+[diff]
+	algorithm = patience
+[core]
+	excludesfile = ~/.gitignore_global
+[push]
+	default = simple
